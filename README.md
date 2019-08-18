@@ -1,6 +1,6 @@
 # Text To DNA
 
-[Preview Page (Demo)](https://baselakasha.github.io/Text_To_DNA/index.html){:target="_blank"}
+<a href="https://baselakasha.github.io/Text_To_DNA/index.html" target="_blank">Preview Page (Demo)</a>
 
 Encode your name to DNA Code
 
