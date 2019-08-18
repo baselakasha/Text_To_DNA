@@ -4,13 +4,42 @@ $(document).ready(function(){
 
 
   $("#convertBtn").click(function(){
-    var text = $("#input").val();
+    let text = $("#input").val();
 
     // Validate Input
     if(text.length == 0){
+      // If empty make the input border red
       $("#input").css("border-color","red");
     }
-    
+
+    const dictionary = {
+      "a" : "GCT", "b" : "GCA", "c" : "TGC",
+      "d" : "GAT", "e" : "GAG", "f" : "TTT",
+      "g" : "GGG", "h" : "CAT", "i" : "ATA",
+      "j" : "ATC", "k" : "AAG", "l" : "CTC",
+      "m" : "ATG", "n" : "GAC", "o" : "GAT",
+      "p" : "CCC", "q" : "GAG", "r" : "CGT",
+      "s" : "TCA", "t" : "ACT", "u" : "ACG",
+      "v" : "GTC", "w" : "TGG", "x" : "GTA",
+      "y" : "TAC", "z" : "TAT"
+    };
+
+    let dna = "";
+
+    // Remove everything but letters and make all letters small
+    text = text.replace(/[^a-zA-Z]/g,"").toLowerCase();
+
+    // Split text Into an array
+    text = text.split("");
+
+    // Iterate through the text and add the append the code to the dna
+    for(i in text){
+      dna += dictionary[text[i]];
+    }
+
+    // Show the dna in the output texarea
+    $("#output").text(dna);
+
   });
 
 });
