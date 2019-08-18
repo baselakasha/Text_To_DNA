@@ -10,6 +10,9 @@ $(document).ready(function(){
     if(text.length == 0){
       // If empty make the input border red
       $("#input").css("border-color","red");
+
+      // Terminate
+      return 1;
     }
 
     const dictionary = {
