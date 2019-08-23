@@ -1,13 +1,10 @@
 $(document).ready(function(){
-  // Add a gab between the main and the footer
-  $("#footerSpace").css("height",$("#footer").height());
-
 
   $("#convertBtn").click(function(){
     let text = $("#input").val();
 
     // Validate Input
-    if(text.length == 0){
+    if(text.length === 0){
       // If empty make the input border red
       $("#input").css("border-color","red");
 
@@ -36,7 +33,7 @@ $(document).ready(function(){
     text = text.split("");
 
     // Iterate through the text and add the append the code to the dna
-    for(i in text){
+    for(let i in text){
       dna += dictionary[text[i]];
     }
 

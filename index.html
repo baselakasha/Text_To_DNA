@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css" />
     </head>
-    <body>
+    <body class="d-flex flex-column sticky-footer-wrapper">
 
-      <header class="containerx">
+      <header class="container">
         <h1 class="h1 text-center mt-5">Text To DNA</h1>
       </header>
 
-      <main class="container col-12 col-md-7 mx-auto">
+      <main class="container col-12 col-md-7 mx-auto flex-fill">
         <div class="form-group mt-5 ">
           <label for="input" class="h2">Text</label>
           <textarea id="input" class="form-control" name="input" rows="6" placeholder="Text"></textarea>
@@ -27,10 +27,6 @@
           <textarea id="output" class="form-control mx-auto" name="output" rows="5"></textarea>
         </div>
       </main>
-
-      <div class="mt-5"></div>
-
-      <div id="footerSpace"></div>
 
       <footer class="container-fluid row bg-dark m-0 p-3" id="footer">
 
